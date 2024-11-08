@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/PocketDevice/static/css/main.dac8ea77.css",
+    "main.js": "/PocketDevice/static/js/main.b29530a1.js",
+    "static/js/885.e0a369c3.chunk.js": "/PocketDevice/static/js/885.e0a369c3.chunk.js",
+    "static/media/work_place.png": "/PocketDevice/static/media/work_place.02fcb53a27b71c40a940.png",
+    "static/media/jungle.png": "/PocketDevice/static/media/jungle.2bbee08d9d7ec5674477.png",
+    "static/media/laptop1.png": "/PocketDevice/static/media/laptop1.82c7b220310cd387046c.png",
+    "static/media/todo_background.png": "/PocketDevice/static/media/todo_background.2c180649579c2d390c86.png",
+    "static/media/magnifying_glass.png": "/PocketDevice/static/media/magnifying_glass.653a5181e618f0ece440.png",
+    "static/media/bk2.png": "/PocketDevice/static/media/bk2.518c12e8cd6cd425dc50.png",
+    "static/media/cat_touched.png": "/PocketDevice/static/media/cat_touched.e02c34959b4a206f4bfe.png",
+    "static/media/cat_sleeping.png": "/PocketDevice/static/media/cat_sleeping.8ba14502956592da8c4a.png",
+    "static/media/phone.png": "/PocketDevice/static/media/phone.7a1ec100c5a4d796c72b.png",
+    "static/media/background.png": "/PocketDevice/static/media/background.41d3d8d1b03bfdc7b96a.png",
+    "static/media/tablet_vertical.png": "/PocketDevice/static/media/tablet_vertical.e3cd5a6293caae25aab7.png",
+    "static/media/tablet.png": "/PocketDevice/static/media/tablet.67e6b90d107732be9d1c.png",
+    "static/media/back1.png": "/PocketDevice/static/media/back1.9f5d86a110a4f335c6ad.png",
+    "static/media/Summer1.png": "/PocketDevice/static/media/Summer1.be5e4d990963ae902e3c.png",
+    "static/media/m5x7.ttf": "/PocketDevice/static/media/m5x7.0e6f2f9a3759246baef2.ttf",
+    "static/media/eraser.png": "/PocketDevice/static/media/eraser.909a99b1184eeed91f27.png",
+    "static/media/brush.png": "/PocketDevice/static/media/brush.44320d34028a2a66e0b7.png",
+    "static/media/7-font.ttf": "/PocketDevice/static/media/7-font.e10806e951a01c23a25c.ttf",
+    "static/media/fibberish.ttf": "/PocketDevice/static/media/fibberish.1719d572d74b81cc2c74.ttf",
+    "static/media/butterfly.png": "/PocketDevice/static/media/butterfly.40bd3d49e4e207f541b0.png",
+    "static/media/Julia.png": "/PocketDevice/static/media/Julia.c9b9c9da48d43006ed20.png",
+    "static/media/FatPix-SVG.ttf": "/PocketDevice/static/media/FatPix-SVG.f65727c711ef06b93a4d.ttf",
+    "static/media/pause.png": "/PocketDevice/static/media/pause.e0dd02d3a768adbbd8eb.png",
+    "index.html": "/PocketDevice/index.html",
+    "main.dac8ea77.css.map": "/PocketDevice/static/css/main.dac8ea77.css.map",
+    "main.b29530a1.js.map": "/PocketDevice/static/js/main.b29530a1.js.map",
+    "885.e0a369c3.chunk.js.map": "/PocketDevice/static/js/885.e0a369c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dac8ea77.css",
+    "static/js/main.b29530a1.js"
+  ]
+}
