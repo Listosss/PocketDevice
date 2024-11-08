@@ -1,0 +1,116 @@
+.hanoi_towers_wrapper {
+    position: relative;
+    padding: 35px 30px 15px;
+    background-image: url(../../../public/assets/hanoiTowers/jungle.png);
+    background-size: cover;
+    background-position: top;
+    box-shadow: -5px 0 0 0 #2d562e,
+        5px 0 0 0 #2d562e,
+        0 -5px 0 0#2d562e,
+        0 5px 0 0 #2d562e;
+    max-width: 600px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hanoi_towers_start_menu{
+    min-height: 330px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 0;
+}
+.hanoi_towers_start_menu h1{
+    font-family: "FatPix";
+    font-size: 45px;
+    text-align: center;
+    background: -webkit-linear-gradient(#fdd852, #15e129);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(22, 106, 33);
+}
+
+.game_settings_wrapper{
+    background-color: rgba(218, 218, 218, 0.188);
+    border-radius: 10px;
+    padding: 10px 10px 20px;
+    margin: 15px 0 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game_settings_wrapper p{
+    margin-bottom: 10px;
+    font-family: "Fibberish";
+    font-size: 25px;
+    text-align: center;
+}
+.choose_disks_num_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    grid-template-rows: repeat(2, 50px);
+    grid-gap: 10px;
+}
+.choose_disks_num_grid button{
+    font-family: "Fibberish";
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f5aacc;
+    cursor: pointer;
+}
+.choose_disks_num_grid .active{
+    background-color: #dfeb35;
+    box-shadow: -3px 0 0 0 #15e129,
+    3px 0 0 0 #15e129,
+    0 -3px 0 0 #15e129,
+    0 3px 0 0 #15e129;
+}
+.start_hanoi_towers_btn{
+    font-family: "Fibberish";
+    font-size: 25px;
+    padding: 10px 25px;
+    box-shadow: -4px 0 0 0 #5b4826e0,
+    4px 0 0 0 #5b4826e0   ,
+    0 -4px 0 0 #5b4826e0,
+    0 4px 0 0 #5b4826e0;
+    background-color: #dfeb35c4;
+    cursor: pointer;
+}
+.start_hanoi_towers_btn:hover{
+    background-color: #dfeb35ed;
+}
+
+@media(max-width: 850px) {
+    .hanoi_towers_wrapper {
+        padding: 35px 20px 15px;      
+        width: 380px;
+    }
+    .hanoi_towers_start_menu h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 600px) {
+    .hanoi_towers_wrapper {
+        width: 100%;
+        height: 100%; 
+    }
+    .hanoi_towers_start_menu h1{
+        font-size: 35px;
+    }
+}
+@media(max-width: 400px) {
+    .choose_disks_num_grid{
+        grid-template-columns: repeat(2, 40px);
+        grid-template-rows: repeat(2, 40px);
+    }
+    .game_settings_wrapper{
+        margin: 15px 0 25px;
+    }
+    .game_settings_wrapper p{
+        font-size: 22px;
+    }
+}

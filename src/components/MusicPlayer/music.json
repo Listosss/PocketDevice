@@ -1,0 +1,6 @@
+[
+    {"name": "Coffee Break", "artist": "Tri-Tachyon", "src":"./assets/musicPlayer/cover1.png", "path": "./assets/music/jazz.mp3"},
+    {"name": "Expressions Of The Mind", "artist": "ShadyDave", "src":"./assets/musicPlayer/cover2.png", "path": "./assets/music/expressions-of-the-mind.mp3"},
+    {"name": "Vintage Elecro", "artist": "frankum", "src":"./assets/musicPlayer/cover3.png", "path": "./assets/music/vintage-elecro.mp3"},
+    {"name": "Rockkk", "artist": "chiptunerock_7", "src":"./assets/musicPlayer/cover4.png", "path": "./assets/music/rock-music.mp3"}
+]

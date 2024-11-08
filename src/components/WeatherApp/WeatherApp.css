@@ -1,0 +1,43 @@
+.weatherApp_wrapper{
+    position: relative;
+    width: 670px;
+    min-height: 350px;
+    background-color: #cecff3e8;
+    background-image: url(../../../public/assets/weatherApp/bk2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 40px 50px 30px;
+    box-shadow: -3px 0 0 0 #6e706fc3,
+    3px 0 0 0 #6e706fc3,
+    0 -3px 0 0 #6e706fc3,
+    0 3px 0 0 #6e706fc3;
+}
+
+.weatherApp_title{
+    text-align: center;
+    font-family: "Fibberish";
+    color: #4343aa;
+}
+@media (max-width: 1050px) { 
+    .weatherApp_wrapper {
+        width: 590px;
+        padding: 40px 40px 30px;
+    }
+}
+
+@media (max-width: 850px) {
+    .weatherApp_wrapper {
+        width: 390px;
+        padding: 30px 30px 20px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .weatherApp_wrapper {
+        width: 100%;
+        height: 100%; 
+        min-width: fit-content;
+        padding: 40px 20px 20px; 
+    }}
+

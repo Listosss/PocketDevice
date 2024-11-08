@@ -1,0 +1,109 @@
+.styleBG_wrapper{
+    padding: 50px 80px 30px 80px;
+    background-color: #efe8d9;
+    position: relative;
+    box-shadow:   -5px 0 0 0 #c3b082dd,
+    5px 0 0 0 #c3b082dd,
+    0 -5px 0 0 #c3b082dd,
+    0 5px 0 0 #c3b082dd;
+}
+.styleBG_title span{
+    color:  #99ce8d;
+}
+.styleBG_title span:last-child{
+    color:  #d18ca2;
+}
+.backgound_slider_prev, .backgound_slider_next{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 50%;
+    transform: translate(0, 50%);
+    background-image: url(../../../public/assets/backgroundApp/arrow_btn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.backgound_slider_next{
+    right: 3%;
+    transform: translate(0, 50%) rotate(180deg);
+}
+.backgound_slider_prev{
+    left: 3%;
+}
+.backgound_slider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bg_example{
+    width: 250px;
+    height: 150px;
+    border: 4px solid #c3b082dd;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg_name{
+    font-family: "Fibberish";
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    color: #5f492d;
+}
+.bg_choose_btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    box-shadow:   -3px 0 0 0 #c3b082dd,
+    3px 0 0 0 #c3b082dd,
+    0 -3px 0 0 #c3b082dd,
+    0 3px 0 0 #c3b082dd;
+    font-family: "Fibberish";
+    color: #947349;
+    font-size: 20px;
+}
+.styleBG_title{
+    font-family: "Fibberish";
+    color: #947349;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: rgb(194, 199, 97);
+    font-size: 40px;
+}
+@media (max-width: 850px) {
+    .styleBG_wrapper{
+        padding: 50px 40px 30px;
+
+    }
+    .backgound_slider_prev, .backgound_slider_next{
+        position: absolute;
+        bottom: 80px;
+        background-image: url(../../../public/assets/backgroundApp/arrow_btn.png);
+        transform: translate(0, 100%)
+    }
+    .backgound_slider_next{
+        right: 3%;
+        transform: translate(0, 100%) rotate(180deg);
+    }
+    .backgound_slider_prev{
+        left: 3%;
+    }
+}
+@media (max-width: 600px) {
+    .styleBG_wrapper{
+        height: 100%;
+        width: 100%;
+    }
+    .bg_choose_btn{
+        position: absolute;
+        bottom: 30px;
+    }
+    .bg_example{
+        max-width: 230px;
+    }
+}

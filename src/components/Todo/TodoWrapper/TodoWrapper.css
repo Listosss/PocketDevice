@@ -1,0 +1,107 @@
+.todo_wrapper{
+    width: fit-content;
+    padding: 25px 30px 20px 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../../../public/assets/todoApp/todo_background.png);
+    background-repeat: repeat-y;
+    background-size: cover;
+    position: relative;
+    max-height: 350px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: -3px 0 0 0 #6e706fc3,
+    3px 0 0 0 #6e706fc3,
+    0 -3px 0 0 #6e706fc3,
+    0 3px 0 0 #6e706fc3;
+}
+.todo_title{
+    font-family: "Fibberish";
+    color: #4343aa;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #cccccce1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color:  #7da9d8;
+}
+
+
+@media (max-width: 850px) {
+    .todo_wrapper {
+        padding: 20px 25px 15px 40px;
+    }
+
+    .todo_form {
+        width: 260px;
+    }
+
+    .todo_form input {
+        font-size: 18px;
+        padding: 8px 18px;
+    }
+
+    .todo_form button {
+        min-width: 60px;
+        font-size: 18px;
+    }
+
+    .todo{
+        width: 260px;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+    .todo p{
+        font-size: 20px;
+        max-width: 100px;
+        word-wrap: break-word;
+    }
+    .todo_icons{
+        gap: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .todo_wrapper {
+        padding: 15px 15px 10px 35px;
+        width: 100%;
+        height: 100%;
+        max-height:fit-content;
+    }
+
+    .todo_form {
+        width: 210px;
+    }
+    .todo_form input {
+        padding: 6px 14px;
+    }
+    .todo_form button {
+        min-width: 40px;
+    }
+    .todo{
+        width: 210px;
+        padding: 10px 15px;
+        margin-top: 20px;
+    }
+    .todo_icons{
+        gap: 10px;
+    }
+    .todo_edit_btn, .todo_delete_btn{
+        width: 20px;
+        height: 20px;
+    }
+}

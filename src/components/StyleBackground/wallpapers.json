@@ -1,0 +1,8 @@
+[
+    {"name": "Default", "src":"./assets/backgroundApp/wallpaper1.jpg"}, 
+    {"name": "Pink Sugar","src":"./assets/backgroundApp/wallpaper2.png"}, 
+    {"name":"Ocean Breeze", "src": "./assets/backgroundApp/wallpaper3.png"},
+    {"name": "Calm Hills", "src":"./assets/backgroundApp/wallpaper4.png"}, 
+    {"name": "Winter Morning", "src":"./assets/backgroundApp/wallpaper5.png"},
+    {"name": "Summer", "src":"./assets/backgroundApp/wallpaper6.png"}
+]

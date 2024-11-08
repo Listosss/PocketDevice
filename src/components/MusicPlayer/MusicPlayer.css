@@ -1,0 +1,136 @@
+.music_player_wrapper {
+    position: relative;
+    box-shadow: -5px 0 0 0 #c382a8dd,
+        5px 0 0 0 #c382a8dd,
+        0 -5px 0 0 #c382a8dd,
+        0 5px 0 0 #c382a8dd;
+        width: 300px;
+}
+
+.music_card_wrapper {
+    background-color: #ddbed0e8;
+    width: 100%;
+    padding: 43px 30px 20px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player_img {
+    width: 70%;
+    height: 130px;
+}
+
+.player_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.music_name {
+    font-family: 'pixel-font';
+    cursor: default;
+    margin-top: 15px;
+    font-size: 35px;
+    color: #522152;
+    text-align: center;
+}
+
+.music_artist {
+    font-family: 'pixel-font';
+    cursor: default;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.player_progress {
+    cursor: pointer;
+    margin: 20px 0;
+    height: 10px;
+    width: 90%;
+    background-color: white;
+    position: relative;
+    border: 2px solid #452e32c0;
+}
+
+.music_progress {
+    background-color: #98597edd;
+    background-image: url(../../../public/assets/musicPlayer/progressbar.png);
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.music_time_indicators {
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'pixel-font';
+    font-size: 18px;
+}
+
+.music_player_controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.music_player_controls button {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.prev_music_btn,
+.next_music_btn {
+    background-image: url(../../../public/assets/musicPlayer/change_music_btn.png);
+    width: 35px;
+    height: 35px;
+}
+
+.play_music_btn, .pause_music_btn {
+    width: 50px;
+    height: 50px;
+}
+.play_music_btn{
+    background-image: url(../../../public/assets/musicPlayer/play.png);
+}
+.pause_music_btn{
+    background-image: url(../../../public/assets/musicPlayer/pause.png);
+}
+
+.prev_music_btn {
+    transform: rotate(-180deg);
+}
+
+@media (max-width: 600px) {
+    .music_player_wrapper {
+        width: 100%;
+        height: 100%;
+    }
+    .music_card_wrapper {
+        height: 100%;
+        max-height: fit-content;
+        justify-content: space-between;
+    }
+    .player_img {
+        width: 90%;
+        height: 220px;
+        margin-top: 20px;
+    }
+    .player_progress {
+        height: 16px;
+    }
+    .music_time_indicators {
+        font-size: 22px;
+    }
+}

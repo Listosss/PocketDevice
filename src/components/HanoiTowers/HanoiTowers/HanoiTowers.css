@@ -1,0 +1,282 @@
+.game_btns_panel {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.back_to_towers_menu_btn {
+    background-image: url(../../../../public/assets/hanoiTowers/back.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.reset_towers_btn {
+    background-image: url(../../../../public/assets/hanoiTowers/reset.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.game_btns_panel button {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(231, 154, 179);
+    font-family: "Fibberish";
+    font-size: 30px;
+    color: #aa4354;
+    box-shadow: -2px 0 0 0 #aa4354bb,
+        2px 0 0 0 #aa4354bb,
+        0 -2px 0 0 #aa4354bb,
+        0 2px 0 0 #aa4354bb;
+}
+
+.rules_text {
+    width: 70%;
+    position: absolute;
+    font-family: "FatPix";
+    font-size: 45px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    background: -webkit-linear-gradient(#c0fd65, #39a844);
+    background-clip: text;
+    -webkit-text-stroke: 1px rgb(36, 83, 43);
+    -webkit-text-fill-color: transparent;
+    animation: fading linear 3.5s;
+    cursor: default;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 0.7;
+    }
+
+    66% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.towers_div {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.404);
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.tower {
+    height: 150px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2px;
+    flex: 1;
+}
+
+.rod {
+    width: 33px;
+    height: 150px;
+    position: absolute;
+}
+
+.rod::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../../../public/assets/hanoiTowers/rod.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    cursor: pointer;
+}
+
+.disk {
+    min-height: 20px;
+    min-width: 35px;
+    max-height: 25px;
+    background-image: url(../../../../public/assets/hanoiTowers/disk.png);
+    background-size: cover;
+    z-index: 5;
+    border-radius: 5px;
+    border: 2px solid rgb(113, 82, 60);
+    cursor: grab;
+}
+
+.towers_tools_div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.moves_number {
+    font-family: "Fibberish";
+    color: white;
+    font-size: 30px;
+}
+
+.auto_play_btn {
+    padding: 10px;
+    background-color: rgb(231, 154, 179);
+    font-family: "Fibberish";
+    font-size: 22px;
+    color: #aa4354;
+    box-shadow: -4px 0 0 0 #aa4354bb,
+        4px 0 0 0 #aa4354bb,
+        0 -4px 0 0 #aa4354bb,
+        0 4px 0 0 #aa4354bb;
+    cursor: pointer;
+}
+
+.auto_play_btn:disabled {
+    background-color: rgb(202, 120, 146);
+    color: #ffd9df;
+    cursor: not-allowed;
+}
+
+.towers_win_block {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    height: 320px;
+    z-index: 10;
+    background-color: rgba(239, 244, 231, 0.664);
+    animation: bigger linear 0.7s;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.win_text {
+    text-align: center;
+    font-size: 80px;
+    font-family: "FatPix";
+    color: palevioletred;
+    line-height: 70px;
+    background: -webkit-linear-gradient(#fdf33a, #6bc574);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(226, 161, 69);
+}
+
+@keyframes bigger {
+    0% {
+        transform: scale(0.1);
+    }
+
+    25% {
+        transform: scale(0.25);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    75% {
+        transform: scale(0.75);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.win_moves_number {
+    color: #4a2e14b1;
+    font-family: "Fibberish";
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.towers_win_block button {
+    font-family: "Fibberish";
+    font-size: 25px;
+    padding: 10px 20px;
+    box-shadow: -4px 0 0 0 #4a2e14b1,
+        4px 0 0 0 #4a2e14b1,
+        0 -4px 0 0 #4a2e14b1,
+        0 4px 0 0 #4a2e14b1;
+    background-color: #dfeb35c4;
+    color: #4a2e14b1;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+@media(max-width: 850px) {
+    .disk {
+        min-height: 15px;
+        max-height: 20px;
+        max-width: 100%;
+        min-width: 23px;
+    }
+}
+
+@media(max-width: 600px) {
+    .towers_win_block {
+        width: 100%;
+        min-width: fit-content;
+        margin: auto auto;
+    }
+
+    .towers_div {
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .tower {
+        width: 43%;
+        height: 130px;
+        gap: 1px;
+    }
+
+    .tower:nth-child(2) {
+        margin-left: 30%;
+    }
+
+    .tower:nth-child(3) {
+        margin-left: 63%;
+    }
+
+    .rod {
+        height: 130px;
+    }
+
+    .towers_tools_div {
+        margin-top: 20px;
+    }
+
+    .rules_text {
+        width: 80%;
+        line-height: 55px;
+        font-size: 35px;
+    }
+}

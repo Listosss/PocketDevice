@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "FatPix"; 
+    src: local("FatPix-SVG"),
+    url("../../fonts/FatPix-SVG.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Fibberish";
+    src: local("fibberish"),
+        url("../../fonts/fibberish.ttf") format("truetype");
+}
+@font-face {
+    font-family: "pixel-font";
+    src: local("m5x7"),
+        url("../../fonts/m5x7.ttf") format("truetype");
+}
+@font-face {
+    font-family: 'pixel-font-rus';
+    src: url("../../fonts/7-font.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.desktop_wrapper {
+    background-image: url(../../../public/work_place.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    min-width: 320px;
+    padding: 1rem 1rem 0;
+}
+
+.laptop {
+    background-image: url(../../../public/laptop1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 85%;
+    max-width: 1100px;
+    min-width: 940px;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.desktop_screen {
+    width: 81%;
+    height: 77%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "to-do game google . . . hanoi"
+        "style-bg  music . . . . . "
+        "draw weather . . . . .  "
+        "chat . . . . . .  ";
+    grid-gap: 2%;
+    grid-row-gap: 2%;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 14%;
+    left: 9%;
+    background-size: cover;
+}
+
+.cat {
+    width: 353px;
+    height: 233px;
+    background-image: url(../../../public/cat_sleeping.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 0;
+}
+
+.cat_touched {
+    background-image: url(../../../public/cat_touched.png);
+}
+
+.desktop_shortcut {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.desktop_shortcut:hover {
+    background-color: rgba(0, 128, 255, 0.212);
+    border-radius: 10px;
+}
+
+.shortcut {
+    padding-top: 8px;
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    border-radius: 7px;
+}
+
+.shortcut_name {
+    margin-top: 5px;
+    width: 100%;
+    font-size: clamp(16px, 2vw + 1rem, 19px);
+    font-family: "Fibberish";
+    color: #2e3e75;
+}
+
+.app_window {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: fit-content;
+    max-width: 100%;
+    height: fit-content;
+}
+
+.close_btn {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(231, 154, 179);
+    font-family: "Fibberish";
+    font-size: 30px;
+    color: #aa4354;
+    box-shadow: -2px 0 0 0 #aa4354bb,
+        2px 0 0 0 #aa4354bb,
+        0 -2px 0 0 #aa4354bb,
+        0 2px 0 0 #aa4354bb;
+    z-index: 100;
+}
+
+
+@media (max-width: 1100px) {
+    .cat {
+        display: none;
+    }
+
+    .laptop {
+        background-image: url(../../../public/tablet.png);
+        width: 90%;
+        min-width: 810px;
+        aspect-ratio: 3 / 2;
+    }
+
+    .desktop_screen {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "to-do game google hanoi style-bg "
+            " music draw  weather . ."
+            "chat . . . .  "
+            " . . . . .   ";
+        width: 80%;
+        height: 83%;
+        top: 10%;
+        left: 10%;
+    }
+}
+
+@media (max-width: 850px) {
+    .laptop {
+        background-image: url(../../../public/tablet_vertical.png);
+        width: 65%;
+        min-width: 490px;
+        aspect-ratio: 2 / 3;
+    }
+
+    .desktop_screen {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas:
+            "to-do game google hanoi  "
+            " style-bg music draw  weather"
+            "chat . . . "
+            " . . . . "
+            " . . . . ";
+        width: 82%;
+        height: 80%;
+        top: 10%;
+        left: 8%;
+    }
+    .app_window {
+        position: absolute;
+        left: 2%;
+    }
+}
+
+@media (max-width: 600px) {
+    .desktop_wrapper {
+        align-items: center;
+        justify-content: space-around;
+        min-width: 320px;
+        padding: 10px;
+    }
+    .laptop {
+        background-image: url(../../../public/phone.png);
+        width: 80%;
+        min-width: 390px;
+        aspect-ratio: 3 / 5;
+    }
+
+    .desktop_screen {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "style-bg to-do google  "
+            " music draw  weather"
+            "chat hanoi game   "
+            " . . .   ";
+        width: 72%;
+        height: 82%;
+        top: 10%;
+        left: 14%;
+    }
+
+    .app_window {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .laptop {
+        aspect-ratio: 1 / 2;
+        width: 100%;
+        min-width: 305px;
+    }
+
+    .desktop_screen {
+        width: 87%;
+        height: 82%;
+        top: 10%;
+        left: 7%;
+    }
+}
